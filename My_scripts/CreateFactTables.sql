@@ -31,6 +31,7 @@ CROSS JOIN dimVehicle v;
 
 
 
+use TransitDW; 
 
 -- Drop if exists
 DROP TABLE IF EXISTS FactRevenue;
@@ -87,3 +88,6 @@ JOIN dimFarePrice fp ON r.FareTypeID = fp.FareTypeID;
 --UPDATE dimFarePrice
 --SET MonthlyPassRate = 95.00
 --WHERE FareTypeID = 5;
+
+
+select * from dbo.FactRevenue;
