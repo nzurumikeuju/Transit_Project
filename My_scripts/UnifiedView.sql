@@ -19,3 +19,5 @@ JOIN FactRevenue fr
    AND r.StopID = fr.StopID
    AND r.FareTypeID = fr.FareTypeID
    AND r.VehicleID = fr.VehicleID;
+
+   SELECT TOP 20 * FROM vw.FactUnified
